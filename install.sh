@@ -27,5 +27,12 @@ yum install -y hispavoces-pal-diphone
 yum install -y hispavoces-sfl-diphone
 cd /etc/asterisk/
 wget https://github.com/VitalPBX/festival/raw/master/festival.conf
+asterisk -rx"module load app_festival.so"
 systemctl restart festival.service
-asterisk -rx"core reload"
+cd /etc/asterisk/ombutel
+wget https://github.com/VitalPBX/pico2wave/raw/master/extensions__90-festival.conf
+asterisk -rx"dialplan reload"
+echo -e "\n"
+echo -e "************************************************************"
+echo -e "*                 For test dial *8866                      *"
+echo -e "************************************************************"
