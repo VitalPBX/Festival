@@ -14,3 +14,16 @@ Copy install.sh to your home directory and procedure to execute.
 [root@vitalpbx ~]# chmod +x install.sh
 [root@vitalpbx ~]# ./install.sh
 </pre>
+
+## Voice Select<br>
+If you want to change the voice you must go to the voice configuration files that is in:
+<pre>
+/usr/share/festiva/lib
+</pre>
+
+Edit the voices.scm file and near line 328 will show the list of available voices, order in such a way that the first one will be the one we hear.
+
+After selecting the voice, the festival service must be restarted:
+<pre>
+systemctl restart festival.service
+</pre>
