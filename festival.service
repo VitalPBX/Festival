@@ -1,0 +1,5 @@
+[Unit]
+Description=Festival speech synthesis server
+[Service]
+ExecStart=/usr/bin/festival_server
+Type=simple
