@@ -27,3 +27,13 @@ After selecting the voice, the festival service must be restarted:
 <pre>
 systemctl restart festival.service
 </pre>
+
+Now Dial
+<pre>
+*8866
+</pre>
+
+You should hear the following sentence
+<pre>
+This is a simple Vital P B X text to speech test in english.
+</pre>
